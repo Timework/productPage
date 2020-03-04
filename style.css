@@ -10,7 +10,6 @@
     width: 50px;
 }
 #title{
-    width: 500px;
     margin: 100px auto 0px auto;
     text-align: center;
 }
@@ -98,6 +97,7 @@ ul#nav-links li{
     margin-right: auto;
 }
 #form{
+    display: flexbox;
     margin-left: 15%;
 }
 html{
