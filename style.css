@@ -1,5 +1,85 @@
 #nav-bar{
+    display: flex;
     position: fixed;
     top: 0;
     width: 100%;
+    background-color: white;
+}
+#header-img{
+    height: 50px;
+    width: 50px;
+}
+#title{
+    width: 500px;
+    margin: 100px auto 0px auto;
+    text-align: center;
+}
+.feature-icon{
+    height: 50px;
+    width: 50px;
+}
+#native-grid, .grid{
+    display: grid;
+    width: 500px;
+    grid-template-rows: repeat(2, 30px);
+    grid-template-columns: repeat(3, 300px);
+    grid-column-gap: 20px;
+    grid-template-areas: 
+    "image title title"
+    "image info info";
+    margin-bottom: 50px;
+}
+#native-icon, .feature-icon{
+    display: flex;
+    grid-area: image;
+    margin: 20px 20px 0px auto;
+}
+#native-title, .feature-title{
+    grid-area: title;
+}
+#native-info, .feature-info{
+    grid-area: info;
+}
+#feature-intro{
+    text-align: center;
+}
+#packages{
+    display: flex;
+    -ms-flex-align: row;
+    justify-content: center;
+}
+.package{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid;
+    width: 20%;
+    margin:0px 30px;
+}
+#rag-intro{
+    text-align: center;
+}
+#rags{
+    display: flex;
+    -ms-flex-align: row;
+    justify-content: center;
+}
+.rag{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+    margin: 0px 30px;
+}
+.rag-image{
+    height: 200px;
+    width: 200px;
+}
+#package-intro{
+    text-align: center;
+}
+ul#nav-links li{
+    display: inline;
+    margin: auto 20px 0px 20px;
+    justify-self: right;
 }
